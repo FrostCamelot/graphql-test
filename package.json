@@ -1,0 +1,24 @@
+{
+  "name": "graphql-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "graphpack",
+    "build": "graphpack build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrostCamelot/graphql-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FrostCamelot/graphql-test/issues"
+  },
+  "homepage": "https://github.com/FrostCamelot/graphql-test#readme",
+  "devDependencies": {
+    "graphpack": "^1.0.9"
+  }
+}

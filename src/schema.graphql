@@ -1,0 +1,84 @@
+type User {
+  id: Int!
+  name: String!
+  email: String!
+  age: Int
+}
+
+type Address {
+  city: String!
+  country: String!
+}
+
+type Customer {
+  companyName: String!
+  address: Address!
+}
+
+type Query {
+  users: [User!]!
+  user(id: Int!): User!
+  customer: [Customer!]!
+}
+
+
+# Фронт: npm run dev
+
+# Write your query or mutation here
+# query {
+#   users {
+#     id
+#     name
+#     email
+#     age
+#   }
+# }
+
+# query {
+#   user(id: 1) {
+#     id
+#     name
+#     email
+#     age
+#   }
+# }
+
+
+# query CustomerScreen {
+#   customer {
+#     companyName
+#     address {
+#       city
+#       country
+#     }
+#   }
+# }
+
+#query CustomerScreen {
+#  customer {
+#    ...CustomerCard
+#  }
+#}
+#
+#fragment CustomerCard on Customer {
+#  companyName
+#  address {
+#    city
+#    country
+#  }
+#}
+
+
+# Придумать пример
+
+#fragment CoreImage_data on Image {
+#  url
+#  size
+#}
+#
+#fragment UserProfile on User {
+#  nickname
+#  avatar {
+#    ...CoreImage_data
+#  }
+#}
