@@ -1,4 +1,4 @@
-import { users, customer } from "./db";
+import { users, customer, person } from "./db";
 
 const resolvers = {
   Query: {
@@ -10,6 +10,9 @@ const resolvers = {
     },
     customer: (parent, args, context, info) => {
       return customer;
+    },
+    personnn: (parent, args, context, info) => {
+      return person;
     }
   }
 };

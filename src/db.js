@@ -7,3 +7,8 @@ export let customer = [
   { companyName: 'Azino', address: { city: 'Moscow', country: 'Russia' } },
   { companyName: 'Альпари', address: { city: 'Альпака', country: 'Мексика' } },
 ];
+
+export let person = [
+  { nickname: 'Azino', avatar: { url: 'Moscow', size: 'Russia' } },
+  { nickname: 'Альпари', avatar: { url: 'Альпака', size: 'Мексика' } },
+];

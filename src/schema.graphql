@@ -15,10 +15,21 @@ type Customer {
   address: Address!
 }
 
+type Person {
+  nickname: String!
+  avatar: Image!
+}
+
+type Image {
+  url: String!
+  size: String!
+}
+
 type Query {
   users: [User!]!
   user(id: Int!): User!
   customer: [Customer!]!
+  personnn: [Person!]!
 }
 
 
@@ -54,31 +65,39 @@ type Query {
 #   }
 # }
 
-#query CustomerScreen {
-#  customer {
-#    ...CustomerCard
-#  }
-#}
-#
-#fragment CustomerCard on Customer {
-#  companyName
-#  address {
-#    city
-#    country
-#  }
-#}
+# query CustomerScreen {
+#   customer {
+#     ...CustomerCard
+#   }
+# }
 
+# fragment CustomerCard on Customer {
+#   companyName
+#   address {
+#     city
+#     country
+#   }
+# }
 
-# Придумать пример
+# Пример того, как объединять фрагменты,
+# Смысл фрагментов в том, чтобы переиспользовать код с привязкой к query
 
 #fragment CoreImage_data on Image {
 #  url
 #  size
 #}
 #
-#fragment UserProfile on User {
+#fragment PersonProfile on Person {
 #  nickname
 #  avatar {
 #    ...CoreImage_data
 #  }
 #}
+#
+#
+#query CustomerScreen {
+#  personnn {
+#    ...PersonProfile
+#  }
+#}
+
