@@ -9,6 +9,6 @@ export let customer = [
 ];
 
 export let person = [
-  { nickname: 'Azino', avatar: { url: 'Moscow', size: 'Russia' } },
-  { nickname: 'Альпари', avatar: { url: 'Альпака', size: 'Мексика' } },
+  { nickname: 'Veslo', avatar: { url: 'Velo', size: 'big' } },
+  { nickname: 'Lopata', avatar: { url: 'Lopa', size: 'small' } },
 ];
